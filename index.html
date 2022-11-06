@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Carousel Task</title>
+</head>
+<body>
+    <section>
+    <div class="main-container">
+        <div class="intro-div">
+            <h1> Welcome to My Sport Carousel</h1>
+            <h4>This is my Zuri Week 6 & 7 Task.</h4>
+            <p><em>I hope you have fun.</em></p>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carouselImages fade">
+                <img src="./images/Chelseafc.jpg" style="width:100%">
+                <div class="caption col"> Goal Celebration </div>
+            </div>
+            
+            <div class="carouselImages fade">
+                <img src="./images/Arsenalfc.jpg" style="width:100%">
+                <div class="caption col1"> Arsenal Celebrates Victory </div>
+            </div>
+
+            <div class="carouselImages fade">
+                <img src="./images/MancityFC.jpg" style="width:100%">
+                <div class="caption"> Haaland Celebrates goal With KDB </div>
+            </div>
+            
+            <div class="carouselImages fade">
+                <img src="./images/Psgfc.jpg" style="width:100%">
+                <div class="caption col1"> 3 Man squad in PSG </div>
+            </div>
+
+            <div class="carouselImages fade">
+                <img src="./images/Liverpoolfc.jpg" style="width:100%">
+                <div class="caption col1"> Matip Scores for Liverpool</div>
+            </div>
+            
+            <div class="carouselImages fade">
+                <img src="./images/RealMadridfc.jpg" style="width:100%">
+                <div class="caption col2">Benzema sends a message to rival</div>
+            </div>  
+            
+            <a class="previous-icon" onclick="plusCarousels(-1)"> ❮ </a>
+            <a class="next-icon" onclick="plusCarousels(1)"> ❯ </a>
+        </div>
+        <br>
+            
+        <div style="text-align:center">
+            <span class="dot" onclick="currentCarousel(1)"></span> 
+            <span class="dot" onclick="currentCarousel(2)"></span> 
+            <span class="dot" onclick="currentCarousel(3)"></span> 
+            <span class="dot" onclick="currentCarousel(4)"></span> 
+            <span class="dot" onclick="currentCarousel(5)"></span> 
+            <span class="dot" onclick="currentCarousel(6)"></span> 
+        </div>
+
+        <div class="closing-div">
+            <h4> Thank you for your time!</h4>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    </section>
+</body>
+</html>

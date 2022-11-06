@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Main container */
+.main-container {
+    background-color: #020925;
+    color: #e6def3;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* To hide the images by default */
+.carouselImages {
+    display: none;
+}
+
+/* Carousel Container */
+.carousel-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Images */
+img {
+    vertical-align: middle;
+}
+
+/* parent container */
+.carousel-container a {
+    background-color: rgba(255, 255, 255,0.8);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #ff9966;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Hovering on the parent container */
+.carousel-container:hover {
+    cursor: pointer;
+}
+
+/* Previous Icon */
+.previous-icon {
+    left: 0;
+}
+
+/* Next Icon */
+.next-icon {
+    right: 0;
+}
+
+/* Icons on hover */
+.carousel-container:hover a {
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #ff9966;
+    visibility: visible;
+    opacity: 0.8;
+}
+
+/* The caption */
+.caption {
+    color: #99b3ff;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/* Description Text*/
+.col {
+    color: #99b3ff;
+}
+.col1 {
+    color: #f0f2f7;
+}
+.col2 {
+    color: #f58607;
+}
+
+/* Indicators */
+.dot {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 2px;
+    background-color: #ff9966;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #fff;
+    border: 1px solid #ff9966 ;
+}
+
+/* To fade images */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
