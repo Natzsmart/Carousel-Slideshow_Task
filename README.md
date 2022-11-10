@@ -2,6 +2,8 @@
 
 A <strong>Carousel/Slideshow</strong> with 6 different images football celebration.
 
+### 🔗 https://natzsmart.github.io/Carousel-Slideshow_Task/
+
 ## Ensure the following:
 - The images are properly styled.
 - Directional icons (previous and next Icons ) are shown on the images only when hovered
